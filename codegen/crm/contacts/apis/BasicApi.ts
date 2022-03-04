@@ -115,7 +115,7 @@ export class BasicApiRequestFactory extends BaseAPIRequestFactory {
      * @param archived Whether to return only results that have been archived.
      */
     public async getById(contactId: string, properties?: Array<string>, propertiesWithHistory?: Array<string>, associations?: Array<string>, archived?: boolean, _options?: Configuration): Promise<RequestContext> {
-        console.log('Incomming DATA', contactId, properties,propertiesWithHistory,associated,archived,_options)
+        console.log('Incomming DATA', contactId, properties,propertiesWithHistory,associations,archived,_options)
         let _config = _options || this.configuration;
 
         // verify required parameter 'contactId' is not null or undefined
