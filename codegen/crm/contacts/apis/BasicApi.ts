@@ -168,6 +168,7 @@ export class BasicApiRequestFactory extends BaseAPIRequestFactory {
             await authMethod.applySecurityAuthentication(requestContext);
         }
 
+console.log(requestContext)
         return requestContext;
     }
 
