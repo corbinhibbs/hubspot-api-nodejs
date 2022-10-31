@@ -54,4 +54,24 @@ export class ProductsDiscovery {
       archived,
     )
   }
+
+  public async getById(
+    productId: string,
+    properties?: string[],
+    propertiesWithHistory?: Array<string>,
+    associations?: Array<string>,
+    archived?: boolean,
+    idProperty?: string,
+    _options?: Configuration,
+  ): Promise<any> {
+    return await this.basicApi.getById(
+      productId,
+      properties,
+      propertiesWithHistory,
+      associations,
+      archived,
+      idProperty,
+      _options,
+    )
+  }
 }
